@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            min-height: 100%;
+        }
+
+        body {
+            background-image:
+                linear-gradient(180deg, rgba(10, 6, 4, 0.45) 0%, rgba(10, 6, 4, 0.20) 35%, rgba(10, 6, 4, 0.55) 100%),
+                url("saintluke.jpg");
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 15px 30px;
+            align-items: center;
+        }
+
+        .nav-menu li:first-child {
+            font-weight: bold;
+            font-size: 18px;
+            color: #f4d78b;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #e8c987;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .nav-menu a:hover {
+            background-color: #7a1f1f;
+            color: #f4d78b;
+            font-size: 18px;
+            box-shadow: 0 0 10px rgba(122, 31, 31, 0.7);
+        }
+
+        header {
+            background: linear-gradient(180deg, rgba(20, 10, 8, 0.92) 0%, rgba(35, 14, 10, 0.88) 100%);
+            border-bottom: 2px solid #b8862f;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+        }
+
+        article {
+            background: rgba(15, 8, 6, 0.82);
+            backdrop-filter: blur(4px);
+            padding: 30px;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 8px;
+            border: 1px solid #8a5a1f;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            color: #eee2c8;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 180px;
+            height: 180px;
+            border: 4px solid #b8862f;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            text-align: center;
+            color: #f4e3b0;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            color: #e8c987;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b8862f;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ddd3ba;
+            white-space: pre-line;
+        }
+
+        pre strong {
+            color: #f4d78b;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #7a1f1f 0%, #4a1010 100%);
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #f4e3b0;
+            border-top: 2px solid #b8862f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li>My Profile</li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="MyPets.html">My Pets</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article>
+    <!-- 📸 YOUR PROFILE PICTURE -->
+    <img src="profile.jpg" alt="Geronimo O. Paraan - Profile Picture">
+
+    <h1>Geronimo O. Paraan</h1>
+
+    <h3>All About Me</h3>
+<pre>
+<strong>Age:</strong> 16
+<strong>Gender:</strong> Male
+<strong>Gmail:</strong> Paraangeronimo@gmail.com
+
+<strong>Bio:</strong> Ako to si Gerome, tamad pero may pangarap, Pangarap ko maging crew sa Jollibee, kaso 16 years old pa lang ako kaya aral muna.
+</pre>
+</article>
+
+<footer>
+    <p>&copy; Arigato</p>
+</footer>
+
+</body>
+</html>

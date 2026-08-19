@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Pets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            min-height: 100%;
+        }
+
+        body {
+            background-image:
+                linear-gradient(180deg, rgba(10, 6, 4, 0.45) 0%, rgba(10, 6, 4, 0.20) 35%, rgba(10, 6, 4, 0.55) 100%),
+                url("saintluke.jpg");
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 15px 30px;
+            align-items: center;
+        }
+
+        .nav-menu li:first-child {
+            font-weight: bold;
+            font-size: 18px;
+            color: #f4d78b;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #e8c987;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .nav-menu a:hover {
+            background-color: #7a1f1f;
+            color: #f4d78b;
+            font-size: 18px;
+            box-shadow: 0 0 10px rgba(122, 31, 31, 0.7);
+        }
+
+        header {
+            background: linear-gradient(180deg, rgba(20, 10, 8, 0.92) 0%, rgba(35, 14, 10, 0.88) 100%);
+            border-bottom: 2px solid #b8862f;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+        }
+
+        article {
+            background: rgba(15, 8, 6, 0.82);
+            backdrop-filter: blur(4px);
+            padding: 30px;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 8px;
+            border: 1px solid #8a5a1f;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            text-align: center;
+            color: #f4e3b0;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+            letter-spacing: 0.5px;
+        }
+
+        .pets-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .pet-card {
+            background: rgba(30, 16, 12, 0.85);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #8a5a1f;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .pet-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border: 3px solid #b8862f;
+        }
+
+        .pet-card h3 {
+            color: #f4d78b;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .pet-card p {
+            line-height: 1.5;
+            color: #ddd3ba;
+            font-size: 13px;
+        }
+
+        .pet-card p strong {
+            color: #e8c987;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #7a1f1f 0%, #4a1010 100%);
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #f4e3b0;
+            border-top: 2px solid #b8862f;
+        }
+
+        @media (max-width: 768px) {
+            .pets-container {
+                grid-template-columns: 1fr;
+            }
+            .pet-card {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html">My Profile</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li>My Pets</li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article>
+    <h1>🐾 My Pets</h1>
+
+    <div class="pets-container">
+        <div class="pet-card">
+            <img src="bottoy.jpg" alt="Bottoy the Betta Fish" class="pet-img">
+            <h3>🐟 Bottoy — Fish</h3>
+            <p><strong>Breed:</strong> Halfmoon Betta<br>
+            <strong>Age:</strong> 3 months old<br>
+            <strong>Personality:</strong> Proud and graceful, showing off his magnificent tail like a royal cape.</p>
+        </div>
+
+        <div class="pet-card">
+            <img src="manok.jpg" alt="Manok the Rooster" class="pet-img">
+            <h3>🐓 Manok — Rooster</h3>
+            <p><strong>Breed:</strong> Silver Penciled Plymouth Rock<br>
+            <strong>Age:</strong> 1 year old<br>
+            <strong>Personality:</strong> Proud and watchful, bold yet gentle — a true gentleman's heart.</p>
+        </div>
+
+        <div class="pet-card">
+            <img src="kalapatid.jpg" alt="Kalapatid the Pigeon" class="pet-img">
+            <h3>🕊️ Kalapatid — Pigeon</h3>
+            <p><strong>Breed:</strong> Domestic Pigeon<br>
+            <strong>Age:</strong> 8 months old<br>
+            <strong>Personality:</strong> Gentle and soft-spoken, curious, calm, and full of gentle charm.</p>
+        </div>
+    </div>
+</article>
+
+<footer id="contact">
+    &copy; Arigato
+  <p> No. 09777777777 </p>
+  <p> Gmail: Paraangeronimo@gmail.com</p>
+  
+</footer>
+
+</body>
+</html>
